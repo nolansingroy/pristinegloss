@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   //declare state variable 
   isOnline: boolean | undefined;
-  title = 'pristinegloss';
+  title = 'Pristine Gloss';
   
   constructor() {
     this.isOnline = false;
@@ -20,9 +20,6 @@ export class AppComponent implements OnInit {
     window.addEventListener('online',  this.updateOnlineStatus.bind(this));
     window.addEventListener('offline', this.updateOnlineStatus.bind(this));
   }
-
-
-
 
   private updateOnlineStatus(): void {
     this.isOnline = window.navigator.onLine;
