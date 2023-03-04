@@ -1,26 +1,19 @@
-.example-spacer {
-    flex: 1 1 auto;
+mat-nav-list.list-horizontal {
+    padding: 0;
+    .mat-list-item {
+      display: inline-block;
+      height: auto;
+      width: auto;
+    }
   }
 
-.nav {
-    background-color: aquamarine;
-    text-align: center;
-}
-.title {
-    text-align: center;
-    margin: auto;
+
+  .toolbar-container {
     display: flex;
-    justify-content: center;
-    padding-left: 40px;
-}
-.home {
-    background-color: cadetblue;
-} 
-
-.bg-success {
-    background-color: greenyellow;
-}
-
-.bg-danger {
-    background-color: red;
-}
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 64px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }

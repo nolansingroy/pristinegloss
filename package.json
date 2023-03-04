@@ -24,6 +24,8 @@
     "component": "^1.1.0",
     "firebase-admin": "^11.5.0",
     "firebase-functions": "^4.2.1",
+    "foundation-sites": "^6.7.5",
+    "motion-ui": "^2.0.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

@@ -13,10 +13,23 @@ import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 
 
+
+import { MaterialModule } from './material/material.module';
+import { NavbarComponent } from './navbar/navbar.component';
+import { BlogComponent } from './blog/blog.component';
+import { ProductsComponent } from './products/products.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { FooterComponent } from './footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    BlogComponent,
+    ProductsComponent,
+    CheckoutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +41,7 @@ import { HomeComponent } from './home/home.component';
       registrationStrategy: 'registerWhenStable:30000'
     }),
     BrowserAnimationsModule,
+    MaterialModule,
     MatToolbarModule,
     MatIconModule,
     MatCardModule
