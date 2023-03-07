@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 import { HomeComponent } from './home/home.component';
 
@@ -20,6 +21,10 @@ import { BlogComponent } from './blog/blog.component';
 import { ProductsComponent } from './products/products.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { FooterComponent } from './footer/footer.component';
+import { CustomerTestComponent } from './uvp/customer-test/customer-test.component';
+import { ImageScrollerComponent } from './uvp/image-scroller/image-scroller.component';
+import { BannerPropComponent } from './uvp/banner-prop/banner-prop.component';
+import { UvpComponent } from './uvp/uvp/uvp.component';
 
 @NgModule({
   declarations: [
@@ -29,11 +34,16 @@ import { FooterComponent } from './footer/footer.component';
     BlogComponent,
     ProductsComponent,
     CheckoutComponent,
-    FooterComponent
+    FooterComponent,
+    CustomerTestComponent,
+    ImageScrollerComponent,
+    BannerPropComponent,
+    UvpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgImageSliderModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
