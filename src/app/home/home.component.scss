@@ -14,7 +14,23 @@
 //     background-size: cover;
 // }
 
+
+.mat-card-actions {
+    justify-content: flex-end;
+  }
+  
 .grid-container {
     display: flex;
     justify-content: center;
 }
+
+.checkout-btn {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button.mat-raised-button {
+    font-size: 1.2em;
+    width: 200px;
+    height: 50px;
+  }

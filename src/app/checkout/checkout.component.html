@@ -1,1 +1,11 @@
-<p> todo: mat dialog with the correct parameter </p>
+<h2 mat-dialog-title>Checkout</h2>
+<mat-dialog-content>
+  <p>Product: {{ productName }}</p>
+  <p>Description: {{ productDescription }}</p>
+  <p>Price: {{ productPrice }}</p>
+  <img src="../../assets/img/productimage.jpeg">
+  <a href="{{ paymentLink }}" target="_blank">Pay with Stripe</a>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close()">Cancel</button>
+</mat-dialog-actions>

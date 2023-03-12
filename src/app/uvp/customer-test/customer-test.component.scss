@@ -4,13 +4,26 @@
 }
 
 
-.product-card {
-    max-width: 400px;
+.cusomter-card {
+    max-width: 50%;
     margin: 0 auto;
 }
+
+.customer-card img {
+    width: 100%;
+    height: auto;
+  }
   
-.product-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+//resize card for mobile
+@media (max-width: 767px) {
+    .img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+.customer-header-image {
+    background-image: url('../../../assets/img/sputto_bird.png');
     background-size: cover;
 }
 
